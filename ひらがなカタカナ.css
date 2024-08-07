@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content{
+    width: 50%;
+    height: 70%;
+    border: 5px solid #ff2f00;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 3px #ff2f00; /* inset 0px 0px 25px 0.5px #ff2f00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Start/Stop */
+
+#startBUT{
+    width: 25%;
+    height: 100%;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#startBUT:active{
+    background-color: #00ff0d;
+    color: #000;
+}
+
+#stopBUT{
+    width: 25%;
+    height: 100%;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#stopBUT:active{
+    background-color: #ff0000;
+    color: #000;
+}
+
+/* end of Start/Stop*/
+
+#centerHiraKata{
+    width: 50%;
+    height: 100%;
+    color: #ff2f00;
+    border-left: 3px solid #ff2f00;
+    border-right: 3px solid #ff2f00;
+    text-shadow: 0px 0px 30px;
+    font-size: 175.7px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#delayHira{
+    width: 100%;
+    height: 15%;
+    border-top: 2px solid #ff2f00;
+    border-bottom: 2px solid #ff2f00;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Delay Buttons */
+
+#leftDelay{
+    width: 25%;
+    height: 100%;
+    font-size: 30px;
+    color: #fff;
+    border-right: 1px solid #ff2f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#leftDelay:active{
+    background-color: #00ff0d;
+    color: #000;
+}
+
+#centerDelayL{
+    width: 25%;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    border-right: 1px solid #ff2f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#centerDelayL:active{
+    background-color: #00ff0d;
+    color: #000;
+}
+
+#centerDelayR{
+    width: 25%;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    border-left: 1px solid #ff2f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#centerDelayR:active{
+    background-color: #ff0000;
+    color: #000;
+}
+
+#rightDelay{
+    width: 25%;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    border-left: 1px solid #ff2f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rightDelay:active{
+    background-color: #ff0000;
+    color: #000;
+}
+
+/* end of Delay Buttons */
+
+#hirakata{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#delayDisplay{
+    width: 100%;
+    height: 15%;
+    color: #fff;
+    border-top: 1px solid #ff2f00;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+    #main-content{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #startBUT{
+        width: 100%;
+        height: 15%;
+        color: #fff;
+        font-size: 30px;
+        border-radius: 0px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom: 2px solid #ff2f00;   
+    }
+
+    #stopBUT{
+        width: 100%;
+        height: 15%;
+        font-size: 30px;
+        border-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    #delayHira{
+        height: 15%;
+        border-top: 0px;
+    }
+
+    #centerHiraKata{
+        width: 100%;
+        height: 80%;
+    }
+
+    #leftDelay{
+        font-size: 14px;
+    }
+
+    #centerDelayL{
+        font-size: 14px;
+    }
+
+    #centerDelayR{
+        font-size: 14px;
+    }
+
+    #rightDelay{
+        font-size: 14px;
+    }
+
+    #hirakata{
+        height: 70%;
+        font-size: 50%;
+    }
+
+    #delayDisplay{
+        height: 15%;
+        border-bottom: 2px solid #ff2f00;
+        font-size: 30px;
+    }
+}
